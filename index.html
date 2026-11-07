@@ -5,7 +5,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap');
 :root{--bg:#070710;--panel:rgba(19,19,39,.76);--line:rgba(170,153,255,.19);--purple:#9c72ff;--cyan:#59d8f5;--pink:#ff5ca8;--text:#f5f2ff;--muted:#a7a2bd;--good:#62efbd;--bad:#ff6687;--shadow:0 22px 80px #0009;--glow:0 0 28px #9c72ff45}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:'Alexandria','Cairo',system-ui,sans-serif}body{overflow-x:hidden;background:radial-gradient(ellipse at 15% 12%,#27204b 0,transparent 38%),radial-gradient(ellipse at 88% 80%,#102a48 0,transparent 36%),linear-gradient(145deg,#070710,#0a0a19 55%,#070b15);min-height:100vh}button,input{font:inherit}button{cursor:pointer;color:inherit}.ambient{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.ambient:before,.ambient:after{content:"";position:absolute;width:36vw;height:36vw;min-width:260px;min-height:260px;border-radius:50%;filter:blur(90px);opacity:.15;animation:float 16s ease-in-out infinite alternate}.ambient:before{background:#854cff;top:-12%;right:-8%}.ambient:after{background:#00b9e8;bottom:-16%;left:-8%;animation-delay:-7s}@keyframes float{to{transform:translate(8vw,7vh) scale(1.25)}}#particles{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.5}.app{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;max-width:1100px;margin:auto;padding:24px clamp(14px,4vw,42px) 34px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.4px}.brand-mark{width:38px;height:38px;border-radius:13px;background:linear-gradient(145deg,#a17aff,#3bbde9);display:grid;place-items:center;color:#090817;box-shadow:0 0 24px #986eff66;font-size:20px}.top-actions{display:flex;gap:8px}.icon-btn{border:1px solid var(--line);background:#ffffff08;border-radius:13px;padding:10px 12px;color:#d9d2f3;transition:.2s}.icon-btn:hover{background:#ffffff15;transform:translateY(-2px)}.main{width:100%;max-width:790px;margin:auto;flex:1;display:flex;align-items:center;justify-content:center}.screen{width:100%;animation:enter .55s cubic-bezier(.2,.8,.2,1) both}@keyframes enter{from{opacity:0;transform:translateY(18px) scale(.985);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}.panel{background:linear-gradient(145deg,rgba(28,25,52,.86),rgba(12,17,33,.82));border:1px solid var(--line);border-radius:26px;padding:clamp(22px,4vw,42px);box-shadow:var(--shadow),inset 0 1px #ffffff0b;backdrop-filter:blur(20px);position:relative;overflow:hidden}.panel:before{content:"";position:absolute;inset:0 12% auto;height:1px;background:linear-gradient(90deg,transparent,#b9a5ff88,transparent)}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:2px;font-weight:700;margin-bottom:14px}.hero-title{font-size:clamp(31px,6vw,58px);line-height:1.35;font-weight:800;letter-spacing:-1.8px;margin:0 0 16px;background:linear-gradient(100deg,#fff 15%,#c8b7ff 58%,#6edcf4);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{color:#c2bdd6;line-height:2.05;font-size:clamp(14px,2vw,17px);white-space:pre-line}.btn{border:0;border-radius:15px;padding:14px 22px;font-weight:700;transition:transform .2s,filter .2s,box-shadow .2s;position:relative;isolation:isolate}.btn:hover{transform:translateY(-3px);filter:brightness(1.1)}.btn:active{transform:translateY(1px) scale(.99)}.primary{background:linear-gradient(110deg,#9c72ff,#5e9fff 70%,#59d8f5);color:#090817;box-shadow:0 9px 25px #7d6aff45,inset 0 1px #ffffff99}.secondary{background:#ffffff0b;border:1px solid var(--line);color:#eee9ff}.danger{background:linear-gradient(110deg,#ff547f,#b44cff);color:white;box-shadow:0 8px 22px #ff547f30}.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.progress-wrap{margin-bottom:18px}.progress-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:9px}.progress{height:6px;border-radius:20px;background:#ffffff10;overflow:hidden}.progress>span{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,var(--purple),var(--cyan));box-shadow:0 0 15px #8c73ff;transition:width .5s}.question-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.stage-pill{font-size:11px;color:#c9baff;border:1px solid #a17aff4d;background:#9b74ff14;padding:7px 12px;border-radius:99px}.score{color:var(--muted);font-size:12px}.question{font-size:clamp(22px,4vw,34px);line-height:1.65;margin:0 0 24px;font-weight:700}.options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.option{min-height:65px;text-align:right;padding:15px 17px;border-radius:16px;background:linear-gradient(145deg,#ffffff0d,#ffffff05);border:1px solid #b3a2ff26;display:flex;align-items:center;gap:13px;transition:.22s;position:relative;overflow:hidden}.option:hover{border-color:#9f83ff99;transform:translateY(-2px);box-shadow:0 9px 25px #6f58ff20}.letter{width:31px;height:31px;flex:0 0 31px;border-radius:10px;background:#9b7aff20;color:#cbbaff;display:grid;place-items:center;font-weight:700}.option.correct{border-color:var(--good);background:#48e9b51c;box-shadow:0 0 25px #42edb52c}.option.wrong{border-color:var(--bad);background:#ff557a18;animation:shake .35s}.option:disabled{cursor:default}@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}.feedback-slot:empty{display:none}.feedback-slot:not(:empty){margin:0 0 18px;scroll-margin-top:18px}.message{margin-top:0;border:1px solid #a58aff55;background:linear-gradient(120deg,#9b73ff15,#55d7f410);border-radius:16px;padding:19px 21px;line-height:2.05;color:#fff;font-size:clamp(14px,2vw,16px);font-weight:500;box-shadow:0 8px 28px #0005,0 0 22px #9c72ff18;animation:enter .3s}.message.good{border-color:#62efbd55;background:#62efbd0d}.message.bad{border-color:#ff668755;background:#ff66870d}.message .msg-label{font-size:10px;color:var(--cyan);letter-spacing:1.4px;margin-bottom:7px;font-weight:700}.hint-btn{margin-top:18px}.footer{color:#6f6a85;text-align:center;font-size:10px;padding-top:24px}.modal-backdrop{position:fixed;inset:0;background:#03030bd9;backdrop-filter:blur(9px);display:grid;place-items:center;padding:20px;z-index:8;animation:fade .2s}.modal{width:min(520px,100%);background:linear-gradient(145deg,#211d3d,#0d172b);border:1px solid #a58aff55;border-radius:23px;padding:28px;box-shadow:0 25px 100px #000c,0 0 45px #8d6aff22;animation:enter .3s}.modal h3{margin:0 0 12px;font-size:22px}.modal p{line-height:2;color:#c9c4d9}.modal input{width:100%;border:1px solid var(--line);border-radius:13px;background:#060813;color:white;padding:14px;outline:none}.modal input:focus{border-color:var(--purple);box-shadow:0 0 0 3px #9c72ff20}.timer{font-size:clamp(76px,18vw,140px);font-weight:800;letter-spacing:5px;text-align:center;color:#e9ddff;text-shadow:0 0 25px #a67affaa;animation:pulse 1s infinite alternate;font-variant-numeric:tabular-nums}.timer-ring{width:min(280px,70vw);aspect-ratio:1;border:2px solid #a17aff55;border-radius:50%;margin:10px auto 24px;display:grid;place-items:center;box-shadow:0 0 0 12px #9c72ff0b,0 0 65px #8b6cff2a,inset 0 0 50px #8b6cff1c;position:relative}.timer-ring:before{content:"";position:absolute;inset:-9px;border:1px solid #57d7f433;border-radius:50%;animation:spin 8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{to{transform:scale(1.045);text-shadow:0 0 42px #a67aff}}.maintenance{text-align:center}.gear{font-size:58px;display:inline-block;animation:spin 7s linear infinite;filter:drop-shadow(0 0 15px #9c72ff)}.loader{height:5px;border-radius:10px;background:#ffffff10;overflow:hidden;margin:26px auto;width:min(320px,85%)}.loader span{height:100%;display:block;width:35%;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:10px;animation:load 2.2s ease-in-out infinite}@keyframes load{0%{transform:translateX(300%)}100%{transform:translateX(-300%)}}.status{font-size:12px;color:var(--cyan);min-height:24px}.confetti{position:fixed;inset:0;pointer-events:none;z-index:7;overflow:hidden}.confetti i{position:absolute;top:-20px;width:7px;height:13px;border-radius:2px;animation:fall 2.4s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(780deg);opacity:0}}.runaway{position:relative;transition:transform .18s}.small{font-size:12px;color:var(--muted)}.hidden{display:none!important}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:'Alexandria','Cairo',system-ui,sans-serif}body{overflow-x:hidden;background:radial-gradient(ellipse at 15% 12%,#27204b 0,transparent 38%),radial-gradient(ellipse at 88% 80%,#102a48 0,transparent 36%),linear-gradient(145deg,#070710,#0a0a19 55%,#070b15);min-height:100vh}button,input{font:inherit}button{cursor:pointer;color:inherit}.ambient{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.ambient:before,.ambient:after{content:"";position:absolute;width:36vw;height:36vw;min-width:260px;min-height:260px;border-radius:50%;filter:blur(90px);opacity:.15;animation:float 16s ease-in-out infinite alternate}.ambient:before{background:#854cff;top:-12%;right:-8%}.ambient:after{background:#00b9e8;bottom:-16%;left:-8%;animation-delay:-7s}@keyframes float{to{transform:translate(8vw,7vh) scale(1.25)}}#particles{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.5}.app{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;max-width:1100px;margin:auto;padding:24px clamp(14px,4vw,42px) 34px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.4px}.brand-mark{width:38px;height:38px;border-radius:13px;background:linear-gradient(145deg,#a17aff,#3bbde9);display:grid;place-items:center;color:#090817;box-shadow:0 0 24px #986eff66;font-size:20px}.top-actions{display:flex;gap:8px}.icon-btn{border:1px solid var(--line);background:#ffffff08;border-radius:13px;padding:10px 12px;color:#d9d2f3;transition:.2s}.icon-btn:hover{background:#ffffff15;transform:translateY(-2px)}.main{width:100%;max-width:790px;margin:auto;flex:1;display:flex;align-items:center;justify-content:center}.screen{width:100%;animation:enter .55s cubic-bezier(.2,.8,.2,1) both}@keyframes enter{from{opacity:0;transform:translateY(18px) scale(.985);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}.panel{background:linear-gradient(145deg,rgba(28,25,52,.86),rgba(12,17,33,.82));border:1px solid var(--line);border-radius:26px;padding:clamp(22px,4vw,42px);box-shadow:var(--shadow),inset 0 1px #ffffff0b;backdrop-filter:blur(20px);position:relative;overflow:hidden}.panel:before{content:"";position:absolute;inset:0 12% auto;height:1px;background:linear-gradient(90deg,transparent,#b9a5ff88,transparent)}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:2px;font-weight:700;margin-bottom:14px}.hero-title{font-size:clamp(31px,6vw,58px);line-height:1.35;font-weight:800;letter-spacing:-1.8px;margin:0 0 16px;background:linear-gradient(100deg,#fff 15%,#c8b7ff 58%,#6edcf4);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{color:#c2bdd6;line-height:2.05;font-size:clamp(14px,2vw,17px);white-space:pre-line}.btn{border:0;border-radius:15px;padding:14px 22px;font-weight:700;transition:transform .2s,filter .2s,box-shadow .2s;position:relative;isolation:isolate}.btn:hover{transform:translateY(-3px);filter:brightness(1.1)}.btn:active{transform:translateY(1px) scale(.99)}.primary{background:linear-gradient(110deg,#9c72ff,#5e9fff 70%,#59d8f5);color:#090817;box-shadow:0 9px 25px #7d6aff45,inset 0 1px #ffffff99}.secondary{background:#ffffff0b;border:1px solid var(--line);color:#eee9ff}.danger{background:linear-gradient(110deg,#ff547f,#b44cff);color:white;box-shadow:0 8px 22px #ff547f30}.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.progress-wrap{margin-bottom:18px}.progress-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:9px}.progress{height:6px;border-radius:20px;background:#ffffff10;overflow:hidden}.progress>span{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,var(--purple),var(--cyan));box-shadow:0 0 15px #8c73ff;transition:width .5s}.question-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.stage-pill{font-size:11px;color:#c9baff;border:1px solid #a17aff4d;background:#9b74ff14;padding:7px 12px;border-radius:99px}.score{color:var(--muted);font-size:12px}.question{font-size:clamp(22px,4vw,34px);line-height:1.65;margin:0 0 24px;font-weight:700}.options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.option{min-height:65px;text-align:right;padding:15px 17px;border-radius:16px;background:linear-gradient(145deg,#ffffff0d,#ffffff05);border:1px solid #b3a2ff26;display:flex;align-items:center;gap:13px;transition:.22s;position:relative;overflow:hidden}.option:hover{border-color:#9f83ff99;transform:translateY(-2px);box-shadow:0 9px 25px #6f58ff20}.letter{width:31px;height:31px;flex:0 0 31px;border-radius:10px;background:#9b7aff20;color:#cbbaff;display:grid;place-items:center;font-weight:700}.option.correct{border-color:var(--good);background:#48e9b51c;box-shadow:0 0 25px #42edb52c}.option.wrong{border-color:var(--bad);background:#ff557a18;animation:shake .35s}.option:disabled{cursor:default}@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}.feedback-slot:empty{display:none}.feedback-slot:not(:empty){margin:0 0 18px;scroll-margin-top:18px}.message{margin-top:0;border:1px solid #a58aff55;background:linear-gradient(120deg,#9b73ff15,#55d7f410);border-radius:16px;padding:19px 21px;line-height:2.05;color:#fff;font-size:clamp(14px,2vw,16px);font-weight:500;box-shadow:0 8px 28px #0005,0 0 22px #9c72ff18;animation:enter .3s}.message.good{border-color:#62efbd55;background:#62efbd0d}.message.bad{border-color:#ff668755;background:#ff66870d}.message .msg-label{font-size:10px;color:var(--cyan);letter-spacing:1.4px;margin-bottom:7px;font-weight:700}.hint-btn{margin-top:18px}.footer{color:#6f6a85;text-align:center;font-size:10px;padding-top:24px}.modal-backdrop{position:fixed;inset:0;background:#03030bd9;backdrop-filter:blur(9px);display:grid;place-items:center;padding:20px;z-index:8;animation:fade .2s}.modal{width:min(520px,100%);background:linear-gradient(145deg,#211d3d,#0d172b);border:1px solid #a58aff55;border-radius:23px;padding:28px;box-shadow:0 25px 100px #000c,0 0 45px #8d6aff22;animation:enter .3s}.modal h3{margin:0 0 12px;font-size:22px}.modal p{line-height:2;color:#c9c4d9}.modal input{width:100%;border:1px solid var(--line);border-radius:13px;background:#060813;color:white;padding:14px;outline:none}.modal input:focus{border-color:var(--purple);box-shadow:0 0 0 3px #9c72ff20}.timer{font-size:clamp(76px,18vw,140px);font-weight:800;letter-spacing:5px;text-align:center;color:#e9ddff;text-shadow:0 0 25px #a67affaa;animation:pulse 1s infinite alternate;font-variant-numeric:tabular-nums}.timer-ring{width:min(280px,70vw);aspect-ratio:1;border:2px solid #a17aff55;border-radius:50%;margin:10px auto 24px;display:grid;place-items:center;box-shadow:0 0 0 12px #9c72ff0b,0 0 65px #8b6cff2a,inset 0 0 50px #8b6cff1c;position:relative}.timer-ring:before{content:"";position:absolute;inset:-9px;border:1px solid #57d7f433;border-radius:50%;animation:spin 8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{to{transform:scale(1.045);text-shadow:0 0 42px #a67aff}}.maintenance{text-align:center}.gear{font-size:58px;display:inline-block;animation:spin 7s linear infinite;filter:drop-shadow(0 0 15px #9c72ff)}.loader{height:5px;border-radius:10px;background:#ffffff10;overflow:hidden;margin:26px auto;width:min(320px,85%)}.loader span{height:100%;display:block;width:35%;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:10px;animation:load 2.2s ease-in-out infinite}@keyframes load{0%{transform:translateX(300%)}100%{transform:translateX(-300%)}}.status{font-size:12px;color:var(--cyan);min-height:24px}.confetti{position:fixed;inset:0;pointer-events:none;z-index:7;overflow:hidden}.confetti i{position:absolute;top:-20px;width:7px;height:13px;border-radius:2px;animation:fall 2.4s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(780deg);opacity:0}}.runaway{position:relative;transition:transform .18s cubic-bezier(0.175, 0.885, 0.32, 1.275);z-index:5}.small{font-size:12px;color:var(--muted)}.hidden{display:none!important}
 @media(max-width:620px){.app{padding:16px 14px 24px}.topbar{margin-bottom:18px}.options{grid-template-columns:1fr}.panel{border-radius:21px}.option{min-height:59px}.btn-row .btn{flex:1}.brand{font-size:13px}.top-actions .icon-btn{padding:9px 10px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 </style></head>
@@ -13,7 +13,7 @@
 <script>
 (()=>{'use strict';
 const KEY='knowledge_confidence_save_v1';
-const fresh=()=>({screen:'intro',stage:0,score:0,answers:[],attempts:{},hints:0,retries:0,firstTry:{},twinWrong:false,sixth:{phase:0,escapes:0,confirmed:false},ninthWrong:0,started:false});
+const fresh=()=>({screen:'intro',stage:0,score:0,answers:[],attempts:{},hints:0,retries:0,firstTry:{},twinWrong:false,sixth:{phase:0,escapes:0,confirmed:false},ninthWrong:0,started:false,quantum:{hintUsed:false,secondTry:false,quiz:false}});
 let state=load(),soundOn=true,audio=null,timerId=null,seconds=10,maintenanceTick=0;
 function load(){try{const x=JSON.parse(localStorage.getItem(KEY));return x&&typeof x==='object'?{...fresh(),...x}:fresh()}catch{return fresh()}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}}
@@ -27,27 +27,120 @@ function shell(content){main.innerHTML=`<section class="screen">${content}</sect
 function intro(){shell(`<div class="panel"><div class="eyebrow">تجربة تفاعلية · إصدار غير موثوق</div><h1 class="hero-title">لنختبر معرفتك<br>وثقتك</h1><p class="lead" id="introText"></p><div class="btn-row hidden" id="introBtn"><button class="btn primary" id="begin">إبدأ اللعب <span>←</span></button></div></div>`);const text='مرحبًا بك في اختبار المعرفة والثقة.\nقبل أن نبدأ، هناك شيء يجب أن تعرفه عن المطور.\nلا تهتم، لم يُذكر اسمه ولا يريدك أن تتعرف عليه.\nيبدو أنه يفضّل البقاء مجهولًا، وربما لديه أسباب وجيهة لذلك.';let i=0;const el=document.getElementById('introText');function type(){if(state.screen!=='intro')return;el.textContent=text.slice(0,i++);if(i<=text.length)setTimeout(type,27);else document.getElementById('introBtn').classList.remove('hidden')}type();document.getElementById('begin').onclick=()=>{sound();state.screen='gate';state.gate=0;save();render()}}
 const gateTexts=['هل أنت متأكد أنك تريد اللعب؟','هل فكرت جيدًا في هذا القرار؟','ما زالت لديك فرصة للانسحاب!','نحن لا ننصحك بالاستمرار.','آخر فرصة، هل أنت متأكد؟','حسنًا، يبدو أنك لا تستسلم!'];
 function gate(){const n=state.gate||0;shell(`<div class="panel"><div class="eyebrow">بوابة الدخول · خطوة ${n+1} من 6</div><h2 class="hero-title" style="font-size:clamp(26px,5vw,43px)">${gateTexts[n]}</h2><p class="lead">${n<2?'يمكنك التراجع الآن. لن نحكم عليك... كثيرًا.':'إصرارك مثير للإعجاب، وإن كان في غير محله.'}</p><div class="progress"><span style="width:${n/6*100}%"></span></div><div class="btn-row"><button class="btn primary" id="gateNext">${n===5?'أنا مصرّ، للأسف':'نعم، بالتأكيد'}</button></div></div>`);document.getElementById('gateNext').onclick=()=>{sound();if(n<5){state.gate=n+1;save();render()}else{state.screen='opinion';save();modal('ألم تمل بعد؟','المطور لا يريدك أن تلعب هذه اللعبة.<br>لماذا أنت مصرّ؟ أخبرنا!',[{text:'حسنًا، سأخبرك',fn:()=>{overlay.innerHTML='';modal('رأينا أنك تريد قول شيء','ابدأ الكتابة، نحن نصغي...',[{text:'إغلاق',fn:()=>{overlay.innerHTML='';state.stage=1;setScreen('game')}}],true)}}])}}}
-const Q={1:{q:'كم يساوي 1 + 1؟',a:['1','2','4','9999999']},2:{q:'ماذا سقط على نيوتن وهو تحت الشجرة سنة 1642؟',a:['تمساح','تنين','تمر','تفاحة']},3:{q:'كم عدد ألوان قوس قزح؟',a:['5','6','7','8']},4:{q:'كم عدد أيام السنة الكبيسة؟',a:['364','365','366','367']},6:{q:'ما العنصر الكيميائي الذي يحمل الرمز W؟',a:['التنغستن','التيتانيوم','القصدير','الزنك']},7:{q:'من مؤلف كتاب «الأمير»؟',a:['أفلاطون','نيكولو مكيافيلي','أرسطو','سقراط']},8:{q:'من العالم الذي وضع قوانين حركة الكواكب؟',a:['غاليليو','يوهانس كبلر','نيوتن','كوبرنيكوس']},9:{q:'ما اللغة التي كُتبت بها الإلياذة والأوديسة أصلًا؟',a:['اللاتينية','الآرامية','السريانية','اليونانية القديمة']},10:{q:'هل يمكن إثبات أن هناك عددًا لا نهائيًا من الأعداد الأولية التوأم، أي عددين أوليين الفرق بينهما 2؟',a:['نعم، وقد تم إثبات ذلك نهائيًا.','لا، وقد ثبت أن عددها محدود.','لم يتمكن العلماء حتى الآن من إثبات ذلك أو نفيه.','الأعداد الأولية لا يمكن أن يكون الفرق بينها 2.']}};
+const Q={
+1:{q:'كم يساوي 1 + 1؟',a:['1','2','4','9999999']},
+2:{q:'ماذا سقط على نيوتن وهو تحت الشجرة سنة 1642؟',a:['تمساح','تنين','تمر','تفاحة']},
+3:{q:'كم عدد ألوان قوس قزح؟',a:['5','6','7','8']},
+4:{q:'كم عدد أيام السنة الكبيسة؟',a:['364','365','366','367']},
+6:{q:'ما العنصر الكيميائي الذي يحمل الرمز W؟',a:['التنغستن','التيتانيوم','القصدير','الزنك']},
+7:{q:'من مؤلف كتاب «الأمير»؟',a:['أفلاطون','نيكولو مكيافيلي','أرسطو','سقراط']},
+8:{q:'من العالم الذي وضع قوانين حركة الكواكب؟',a:['غاليليو','يوهانس كبلر','نيوتن','كوبرنيكوس']},
+9:{q:'ما اللغة التي كُتبت بها الإلياذة والأوديسة أصلًا؟',a:['اللاتينية','الآرامية','السريانية','اليونانية القديمة']},
+10:{q:'هل يمكن إثبات أن هناك عددًا لا نهائيًا من الأعداد الأولية التوأم، أي عددين أوليين الفرق بينهما 2؟',a:['نعم، وقد تم إثبات ذلك نهائيًا.','لا، وقد ثبت أن عددها محدود.','لم يتمكن العلماء حتى الآن من إثبات ذلك أو نفيه.','الأعداد الأولية لا يمكن أن يكون الفرق بينها 2.']},
+11:{q:'ما الجزء المسؤول عن إنتاج الطاقة في الخلية؟',a:['النواة','الريبوسوم','الميتوكوندريا','الغشاء الخلوي']},
+12:{q:'ما ناتج 15 × 4؟',a:['45','50','60','65']},
+13:{q:'كم زاوية قائمة في المربع؟',a:['4','2 + 2','1 + 3','1 + 1 + 2']},
+14:{q:'إذا كان x² − 5x + 6 = 0، فما مجموع الجذرين؟',a:['2','3','5','6']},
+15:{q:'أي جزء من الدماغ يرتبط بشكل أساسي بتكوين الذكريات الجديدة؟',a:['المخيخ','اللوزة الدماغية','الحُصين','النخاع المستطيل']},
+16:{q:'ما التقنية التي تعتمد على تخزين البيانات في وحدات تسمى Qubits؟',a:['الحوسبة السحابية','الحوسبة الكمومية','الحوسبة العصبية','الحوسبة الموزعة']}
+};
 const letters=['أ','ب','ج','د'];
-function progress(){return `<div class="progress-wrap"><div class="progress-meta"><span>المرحلة ${state.stage} من 11</span><span>الرصيد: ${state.score} نقطة</span></div><div class="progress"><span style="width:${Math.min(100,(state.stage-1)/10*100)}%"></span></div></div>`}
+function progress(){return `<div class="progress-wrap"><div class="progress-meta"><span>المرحلة ${state.stage} من 16</span><span>الرصيد: ${state.score} نقطة</span></div><div class="progress"><span style="width:${Math.min(100,(state.stage-1)/15*100)}%"></span></div></div>`}
 function questionCard(num,extra=''){const q=Q[num];return `${progress()}<div class="panel"><div class="question-head"><span class="stage-pill">السؤال ${num} · اختبار الثقة</span><span class="score">محاولات: ${state.attempts[num]||0}</span></div><h2 class="question">${q.q}</h2><div id="feedback" class="feedback-slot" aria-live="polite" aria-atomic="true"></div><div class="options" id="options">${q.a.map((a,i)=>`<button class="option" data-choice="${i}" id="opt${i}"><span class="letter">${letters[i]}</span><span>${a}</span></button>`).join('')}</div>${extra}</div>`}
 function bindOptions(fn){document.querySelectorAll('[data-choice]').forEach(b=>b.addEventListener('click',()=>{sound();fn(+b.dataset.choice,b)}))}
 function attempts(n){state.attempts[n]=(state.attempts[n]||0)+1;save()}
 function feedback(text,type='',buttons=[]){const slot=document.getElementById('feedback');if(!slot)return;slot.innerHTML=msg(text,type)+(buttons.length?`<div class="btn-row">${buttons.map((b,i)=>`<button class="btn ${b.cls||'primary'}" data-next="${i}">${b.text}</button>`).join('')}</div>`:'');document.querySelectorAll('[data-next]').forEach((e,i)=>e.onclick=()=>{sound();buttons[i].fn()});if(text){requestAnimationFrame(()=>slot.scrollIntoView({behavior:'smooth',block:'center'}))}}
-function go(n){state.stage=n;state.screen=n===11?'maintenance':'game';save();render()}
+function go(n){state.stage=n;state.screen=n===17?'maintenance':'game';save();render()}
 function answerRecord(n,c,correct){state.answers.push({stage:n,choice:c,correct,at:Date.now()});save()}
-function game(){if(state.stage===5){timer();return}if(state.stage===11){maintenance();return}shell(questionCard(state.stage,state.stage===8?'<button class="btn secondary hint-btn" id="hint">تلميح</button>':state.stage===10?'<button class="btn secondary hint-btn" id="hint">تلميح</button>':''));const n=state.stage;if(n===1)bindOptions(q1);if(n===2)bindOptions(q2);if(n===3)bindOptions(q3);if(n===4)bindOptions(q4);if(n===6){bindOptions(q6);renderSixth();}if(n===7)bindOptions(q7);if(n===8){bindOptions(q8);document.getElementById('hint').onclick=()=>{state.hints++;save();modal('تلميح','الإجابة الصحيحة هي .......<br>آسف، المطور لم يكمل عمله، لذلك لن أستطيع مساعدتك.<br>اعتمد على نفسك، ولا تختر الإجابة الثانية.',[{text:'مفهوم... تقريبًا',fn:()=>overlay.innerHTML=''}])}}if(n===9)bindOptions(q9);if(n===10){bindOptions(q10);document.getElementById('hint').onclick=()=>{state.hints++;save();sound('prank');modal('الفخ الأخير','لم يكن من الحكمة استعماله.',[{text:'متابعة',fn:()=>{overlay.innerHTML='';modal('هل تريد التراجع عن هذه الخطوة؟','اختر بحكمة. أو لا تفعل.',[{text:'لا',fn:()=>{overlay.innerHTML='';state.retries++;state.stage=5;state.screen='game';save();modal('عودة إلى منطقة الأمان؟','يبدو أن المطور أشفق عليك.<br>قرر إعادتك إلى مكان أكثر أمانًا... أو ربما أقل أمانًا.',[{text:'حسنًا',fn:()=>{overlay.innerHTML='';go(5)}}])}},{text:'نعم! ❗',cls:'danger',fn:()=>{overlay.innerHTML='';state.retries++;state.stage=1;state.screen='game';save();modal('قرارك... قرارك','لو أنك درست البرمجة، لعلمت أن كلمة نعم مع علامة تعجب تعني أيضًا لا!<br>ولو اخترت لا، لتمت إعادتك إلى السؤال الخامس.<br>لكن يبدو أنك تحب تعقيد الأمور.',[{text:'ابدأ من جديد',fn:()=>{overlay.innerHTML='';go(1)}}])}}])}}])}}}
+function game(){if(state.stage===5){timer();return}if(state.stage===17){maintenance();return}
+let extraHtml = '';
+if(state.stage===8) extraHtml = '<button class="btn secondary hint-btn" id="hint">تلميح</button>';
+if(state.stage===16) extraHtml = '<button class="btn secondary hint-btn" id="hint">تلميح</button>';
+if(state.stage===10) extraHtml = '<div style="margin-top:14px;padding:12px;background:rgba(255,102,135,0.1);border:1px dashed var(--bad);border-radius:12px;font-size:13px;color:#ffb3c1;line-height:1.8;">⚠️ <strong>ملاحظة مهمة جدًا:</strong> إن لم تكن واثقًا من إجابتك، بشدة ننصحك باستخدام التلميح! لأن أي إجابة خاطئة هنا لن تعيدك للمرحلة 6، بل ستدمر تقدمك وتعيدك فورًا إلى بداية اللعبة!</div><button class="btn secondary hint-btn" id="hint">تلميح</button>';
+
+shell(questionCard(state.stage,extraHtml));const n=state.stage;
+if(n===1)bindOptions(q1);
+if(n===2)bindOptions(q2);
+if(n===3)bindOptions(q3);
+if(n===4)bindOptions(q4);
+if(n===6){bindOptions(q6);renderSixth();}
+if(n===7)bindOptions(q7);
+if(n===8){bindOptions(q8);document.getElementById('hint').onclick=()=>{state.hints++;save();modal('تلميح','الإجابة الصحيحة هي .......<br>آسف، المطور لم يكمل عمله، لذلك لن أستطيع مساعدتك.<br>اعتمد على نفسك، ولا تختر الإجابة الثانية.',[{text:'مفهوم... تقريبًا',fn:()=>overlay.innerHTML=''}])}}
+if(n===9)bindOptions(q9);
+if(n===10){bindOptions(q10);document.getElementById('hint').onclick=()=>{state.hints++;save();sound('prank');modal('تلميح السؤال العاشر','الإجابة الصحيحة هي الخيار الثالث: (لم يتمكن العلماء حتى الآن من إثبات ذلك أو نفيه).<br>استخدم هذه المعلومة بحكمة ولا تكن متهورًا!',[{text:'شكرًا على الإنقاذ',fn:()=>overlay.innerHTML=''}])}}
+if(n===11)bindOptions(q11);
+if(n===12)bindOptions(q12);
+if(n===13)bindOptions(q13);
+if(n===14)startQuestionTimer(15,()=>{attempts(14);answerRecord(14,-1,false);sound('bad');feedback('انتهى الوقت! يبدو أنك فاشل في الرياضيات فعلًا. اذهب وتعلّم الحساب من البداية، فالمعادلة لم تكن تنتظر حتى تتقاعد.','bad',[{text:'حسنًا، إلى السؤال التالي',fn:()=>go(15)}])});
+if(n===15)bindOptions(q15);
+if(n===16){bindOptions(q16);document.getElementById('hint').onclick=quantumHint;}
+}
+function startQuestionTimer(duration,onExpire){
+ if(timerId)clearInterval(timerId);
+ seconds=duration;
+ const question=document.querySelector('.question');
+ if(question)question.insertAdjacentHTML('beforebegin',`<div class="stage-pill" id="questionTimer" style="display:inline-block;margin-bottom:12px">الوقت المتبقي: ${duration} ثانية</div>`);
+ const tick=()=>{const el=document.getElementById('questionTimer');if(el)el.textContent='الوقت المتبقي: '+String(Math.max(0,seconds))+' ثانية';};
+ tick();
+ timerId=setInterval(()=>{seconds--;tick();if(seconds<=0){clearInterval(timerId);timerId=null;document.querySelectorAll('#options button').forEach(x=>x.disabled=true);const h=document.getElementById('hint');if(h)h.disabled=true;onExpire();}},1000);
+}
 function q1(c,b){attempts(1);answerRecord(1,c,c===3);if(c===3){state.score+=1;save();b.classList.add('correct');feedback('إجابة مقبولة... وفقًا لقوانين هذا المكان.','good',[{text:'إلى السؤال التالي',fn:()=>go(2)}])}else if(c===1)feedback('منطقية، ورياضياً أنت على حق!<br>لكنني آسف، المطور كان ينام في حصة الرياضيات، لذلك فهو فاشل في الحساب.<br>لا تلمني، أنا مجرد ناقل للأخبار.','bad');else feedback('رائع! يبدو أنك والمطور درستما الرياضيات في نفس المدرسة... أو ربما لم تدرساها أصلًا!','bad')}
 function q2(c){attempts(2);answerRecord(2,c,c===3);if(c<3)feedback('حتى الديناصورات كانت أذكى منك!<br>على الأقل كانت تعرف متى تنقرض.','bad');else feedback('إجابتك خاطئة!<br>نيوتن وُلد سنة 1643، أي إنه لم يكن قد وُلد أصلًا في ذلك الوقت الذي يفترض أن الحادثة وقعت فيه.<br>ولا توجد إجابة صحيحة لهذا السؤال، لأن السؤال نفسه فخ تاريخي.','good',[{text:'الانتقال إلى السؤال التالي',fn:()=>go(3)}])}
 function q3(c,b){attempts(3);answerRecord(3,c,c===2);if(c===2){state.score+=1;save();b.classList.add('correct');confetti();sound('good');feedback('أخيرًا!<br>لقد أجبت عن أول سؤال بشكل صحيح!<br>كان المطور واثقًا أن عقلك لم يتضرر كثيرًا من كثرة جلوسك عليه.<br>لا تحتفل كثيرًا، فما زالت أمامك رحلة طويلة.','good',[{text:'متابعة',fn:()=>go(4)}])}else feedback('أعتقد أنه من الأفضل أن تعود إلى الروضة وتبدأ الدراسة من جديد.<br>لا تقلق، لم يفت الأوان بعد!','bad')}
 function q4(c,b){attempts(4);answerRecord(4,c,c===2);if(c===2){state.score+=1;save();b.classList.add('correct');feedback('همممم... 😮‍💨','good',[{text:'متابعة',fn:()=>go(5)}])}else feedback('أنصحك بالتوقف عن اللعب والعودة إلى الدراسة.<br>السنة الكبيسة لم تكن لغزًا فلسفيًا!','bad')}
 function timer(){if(timerId)clearInterval(timerId);seconds=10;shell(`<div class="panel" style="text-align:center"><div class="eyebrow">المرحلة الخامسة · لحظة من وقتك</div><h2 class="question">يرجى الانتظار قليلًا</h2><div class="timer-ring"><div class="timer" id="timer">00:10</div></div><p class="lead">لا تفعل شيئًا. هذه المرة، هذا هو المطلوب بالضبط.</p></div>`);timerId=setInterval(()=>{seconds--;const el=document.getElementById('timer');if(el)el.textContent='00:'+String(Math.max(0,seconds)).padStart(2,'0');if(seconds<=0){clearInterval(timerId);timerId=null;state.stage=5;save();sound('prank');shell(`<div class="panel"><div class="eyebrow">انتهى الانتظار</div><h2 class="hero-title">مبروك... أضعْت عشر ثوانٍ!</h2>${msg('لا يوجد أي سؤال هنا!<br>المطور أراد فقط أن يضيّع عشر ثوانٍ من حياتك.<br>شكرًا على وقتك الذي لن يعود.','bad')}<div class="btn-row"><button class="btn primary" id="next">الانتقال إلى المرحلة التالية</button></div></div>`);document.getElementById('next').onclick=()=>go(6)}},1000)}
-function renderSixth(){let phase=state.sixth.phase;let opts=document.getElementById('options');if(phase>=1){const tungsten=document.getElementById('opt0');if(tungsten){tungsten.classList.add('runaway');tungsten.style.transform=`translate(${(phase%2?1:-1)*Math.min(85,phase*19)}px,${phase%2?-22:18}px)`;tungsten.style.borderColor='#ff6687'}const titanium=document.getElementById('opt1');if(titanium){titanium.classList.add('correct');titanium.style.borderColor='#62efbd'}}}
-function q6(c,b){attempts(6);if(c===0){if(state.sixth.phase===0){state.sixth.phase=1;save();sound('prank');feedback('','');document.getElementById('feedback').innerHTML=msg('','');const t=document.getElementById('opt0');t.classList.add('wrong');t.style.transform='translate(-40px,18px)';document.getElementById('opt1').classList.add('correct');feedback('...','');document.getElementById('feedback').innerHTML=msg('');setTimeout(()=>{const f=document.getElementById('feedback');if(f)f.innerHTML=msg('تأكد من اختيارك. هناك شيء غير مريح في هذا الزر.','bad')},150);return}if(state.sixth.escapes<1){state.sixth.escapes++;save();const el=document.getElementById('opt0');el.style.transform=`translate(${state.sixth.escapes===1?'-90px':'75px'},${state.sixth.escapes===1?'30px':'-32px'})`;sound('prank');feedback('اقتربت... لكنه لا يريد أن يُلمَس.','bad');return}state.sixth.phase=3;save();answerRecord(6,c,false);modal('لقد ضغطت عليه أخيرًا!','لكن الزر لم يشعر بذلك.<br>ربما شاشتك تالفة؟<br>هل تريد المحاولة مرة أخرى؟',[{text:'نعم',fn:()=>{overlay.innerHTML='';state.sixth.phase=4;save();render();}},{text:'لا',cls:'secondary',fn:()=>{overlay.innerHTML='';feedback('حسنًا. سنعتبر هذا انتصارًا للزر.','bad')}}]);return}answerRecord(6,c,false);feedback('إجابة خاطئة!<br>أعتقد أن مغادرة اللعبة ستكون قرارًا حكيمًا في هذه المرحلة.','bad');}
-// The two confirmations after the runaway-button gag.
+function renderSixth(){
+  let phase=state.sixth.phase;
+  let tungsten=document.getElementById('opt0');
+  let titanium=document.getElementById('opt1');
+  if(tungsten){
+    tungsten.classList.add('runaway');
+    if(phase===1){
+      tungsten.style.transform=`translate(-60px, 25px) scale(0.95)`;
+    }else if(phase===2){
+      tungsten.style.transform=`translate(75px, -35px) rotate(-6deg)`;
+    }else if(phase>=3){
+      tungsten.style.transform=`translate(-30px, -50px) scale(0.9) rotate(5deg)`;
+    }
+  }
+  if(titanium){
+    titanium.classList.add('correct');
+    titanium.style.borderColor='#62efbd';
+  }
+}
+function q6(c,b){
+  attempts(6);
+  if(c===0){
+    if(state.sixth.phase===0){
+      state.sixth.phase=1;
+      save();
+      sound('prank');
+      renderSixth();
+      feedback('مهلا! الزر يتحرك وكأن لديه حياة خاصة به! حاول الإمساك به مجددًا.','bad');
+      return;
+    }
+    if(state.sixth.escapes<2){
+      state.sixth.escapes++;
+      state.sixth.phase = state.sixth.escapes + 1;
+      save();
+      sound('prank');
+      renderSixth();
+      const phrases = ['هرب مجددًا! يبدو أنه يمارس الرياضة.', 'أنت بطيء بعض الشيء، الزر أسرع منك بكثير!'];
+      feedback(phrases[state.sixth.escapes-1], 'bad');
+      return;
+    }
+    state.sixth.phase=4;
+    save();
+    answerRecord(6,c,false);
+    modal('لقد حاصرته أخيرًا!','لكن الزر يبدو ساخرًا منك.<br>هل أنت متأكد أنك تريد الاستمرار معه؟',[{text:'نعم، سأضغط عليه',fn:()=>{overlay.innerHTML='';state.sixth.phase=5;save();render();}},{text:'لا، سأنسحب',cls:'secondary',fn:()=>{overlay.innerHTML='';feedback('حسنًا، الأفضل لك ألا تلاحق أشياء تهرب منك.','bad')}}]);
+    return;
+  }
+  answerRecord(6,c,false);
+  feedback('إجابة خاطئة!<br>أعتقد أن مغادرة اللعبة ستكون قرارًا حكيمًا في هذه المرحلة.','bad');
+}
 function sixthConfirm(){modal('هل أنت متأكد من الإجابة؟','', [{text:'نعم',fn:()=>{overlay.innerHTML='';state.sixth.confirmed=true;state.score+=1;save();sound('good');modal('إجابتك صحيحة!','المطور أراد فقط أن يجعلك تخطئ حتى يضحك عليك.<br>يبدو أنه استمتع بذلك أكثر مما ينبغي.',[{text:'إلى السؤال السابع',fn:()=>{overlay.innerHTML='';go(7)}}])}},{text:'لا',cls:'secondary',fn:()=>{overlay.innerHTML='';feedback('خذ وقتك. الزر لن يذهب بعيدًا... على الأرجح.')}}])}
 function q7(c,b){attempts(7);answerRecord(7,c,c===1);if(c===1){state.score+=1;save();b.classList.add('correct');feedback('أحسنت! نيكولو مكيافيلي هو مؤلف «الأمير».<br>أنت تتقدم، وهذا يثير قلق المطور.','good',[{text:'متابعة',fn:()=>go(8)}])}else feedback('ليس هذا هو الاسم. يبدو أن رفّ الفلسفة لديك يحتاج إلى إعادة ترتيب.','bad')}
-function q8(c,b){attempts(8);if(c===1){if((state.attempts[8]||0)===1){state.firstTry[8]=true;save();answerRecord(8,c,false);feedback('إجابة خاطئة!<br>سأمنحك فرصة أخرى، ولن أخصم منك شيئًا.<br>حاول مرة ثانية.','bad');return}answerRecord(8,c,true);state.score+=1;save();b.classList.add('correct');feedback('الإجابة صحيحة!<br>أردت فقط التأكد من أنك تعرف ما تختار.','good',[{text:'متابعة',fn:()=>go(9)}])}else{answerRecord(8,c,false);feedback('😮‍💨 يبدو أن الكواكب ليست وحدها التي تدور في دوائر. حاول مجددًا.','bad')}}
+function q8(c,b){attempts(8);if(c===1){if((state.attempts[8]||0)===1){state.firstTry[8]=true;save();answerRecord(8,c,false);feedback('إجابة خاطئة!<br>سأمنحك فرصة أخرى، ولن أخصم منك شيئًا.<br>حاول مرة ثانية.','bad');return}answerRecord(8,c,true);state.score+=1;save();b.classList.add('correct');feedback('الإجابة صحيحة!<br>أردت فقط التأكد من أنك تعرف ما تختار.','good',[{text:'متابعة',fn:()=>go(9)}])}else{answerRecord(8,c,false);feedback('😮‍💨 يبدو أن الكواكب ليست وحدها التي تدور في دوائر. حاول مجددًا.','bad')} }
 function q9(c,b){
  attempts(9);
  if(c===3){answerRecord(9,c,true);state.score+=1;save();b.classList.add('correct');feedback('أحسنت! إجابة صحيحة.<br>يبدو أن هناك أملًا في استعادة ما تبقى من معرفتك.','good',[{text:'متابعة',fn:()=>go(10)}]);return}
@@ -56,16 +149,118 @@ function q9(c,b){
  const restart=(yes)=>{overlay.innerHTML='';state.retries++;state.ninthWrong=0;state.attempts={};state.answers=[];state.firstTry={};state.sixth={phase:0,escapes:0,confirmed:false};state.score=0;save();modal(yes?'عودة إلى البداية':'كما تريد',yes?'حسنًا، سنعيدك إلى البداية.<br>نحن لا نمنح الفاشلين فرصًا أخرى، لكن يبدو أنه لا استثناء اليوم.':'أنت من اخترت ذلك بنفسك!<br>لا تلقِ اللوم علينا.',[{text:'ابدأ من جديد',fn:()=>{overlay.innerHTML='';go(1)}}])};
  modal('فرصتك التالية...','أنت حالة ميؤوس منها!<br>قرر المطور أن يعيدك إلى البداية، لأنه فقد الأمل فيك.<br><br>هل تريد أن نمنحك فرصة أخرى؟',[{text:'نعم',fn:()=>restart(true)},{text:'لا',cls:'secondary',fn:()=>restart(false)}]);
 }
-function q10(c,b){attempts(10);if(c===2){const first=!state.twinWrong;answerRecord(10,c,true);if(first){state.score+=.5;save();b.classList.add('correct');feedback('إجابة صحيحة! نصف نقطة لك. لم نكن نتوقع أن تصل إلى هنا بهذا القدر من الهدوء.','good',[{text:'إكمال المرحلة',fn:()=>go(11)}])}else{save();b.classList.add('correct');feedback('هذه هي الإجابة الصحيحة. لكن النقاط الإضافية لا تأتي بعد جولة من التخمين.','good',[{text:'إكمال المرحلة',fn:()=>go(11)}])}}else{state.twinWrong=true;answerRecord(10,c,false);save();feedback('هذه ليست الإجابة الصحيحة.','bad')}}
-function maintenance(){if(timerId){clearInterval(timerId);timerId=null}maintenanceTick++;shell(`<div class="panel maintenance"><div class="eyebrow">المرحلة 11 · منطقة غير مكتملة</div><div class="gear">⚙</div><h1 class="hero-title" style="font-size:clamp(29px,5vw,46px)">محطة الصيانة</h1><div class="loader"><span></span></div><div class="status" id="status">جاري فحص وحدات المنطق...</div><p class="lead">نعتذر عن الإزعاج!<br>ما زلنا نعمل على هذه المرحلة.<br>يبدو أن المطور لم يكن مستعدًا لوصولك إلى هنا.<br>يرجى الانتظار... إذا كنت تملك ما يكفي من الصبر.</p><p class="small">لا توجد نتيجة نهائية هنا. النظام في وضع الصيانة.</p></div>`);const lines=['جاري فحص وحدات المنطق...','محاولة العثور على المطور... فشلت.','إعادة تشغيل حسّ الفكاهة...','تحميل الصبر: غير متوفر','المرحلة لا تزال قيد الإنكار.'];let i=0;const el=document.getElementById('status');const id=setInterval(()=>{if(state.screen!=='maintenance'){clearInterval(id);return}if(el)el.textContent=lines[++i%lines.length]},2100)}
-function render(){overlay.innerHTML='';if(timerId&&state.screen!=='game') {clearInterval(timerId);timerId=null}switch(state.screen){case'intro':intro();break;case'gate':gate();break;case'opinion':gate();break;case'maintenance':maintenance();break;default:if(state.stage===0){state.stage=1;save()}if(state.stage===5)timer();else if(state.stage===11)maintenance();else game()}}
+function q10(c,b){
+ attempts(10);
+ answerRecord(10,c,c===2);
+ if(c===2){
+   state.score+=1;
+   save();
+   b.classList.add('correct');
+   feedback('إجابة صحيحة! لقد نجوت من الفخ الأخير بأعجوبة.','good',[{text:'إكمال المرحلة',fn:()=>go(11)}]);
+ }else{
+   save();
+   sound('bad');
+   modal('خطأ فادح!', 'المطور لا يفي بوعوده، هل أنت أحمق وما زلت تثق أنه سيعيدك للمرحلة 6؟', [{text:'العودة إلى بداية اللعبة بحسرة', cls:'danger', fn:()=>{
+     overlay.innerHTML='';
+     state.retries++;
+     state.attempts={};
+     state.answers=[];
+     state.firstTry={};
+     state.sixth={phase:0,escapes:0,confirmed:false};
+     state.score=0;
+     state.ninthWrong=0;
+     save();
+     go(1);
+   }}]);
+ }
+}
+function q11(c,b){
+ attempts(11);answerRecord(11,c,c===2);
+ if(c===2){state.score++;save();b.classList.add('correct');sound('good');feedback('صحيح! الميتوكوندريا هي محطة الطاقة في الخلية. يبدو أنك تعرف شيئًا يتجاوز مكان الثلاجة.','good',[{text:'متابعة',fn:()=>go(12)}]);}
+ else feedback('ليست هذه. النواة تدير شؤون الخلية، لكنها لا تتولى إنتاج معظم طاقتها. جرّب مرة أخرى قبل أن تتهم الخلية بالتقصير.','bad');
+}
+function q12(c,b){
+ attempts(12);
+ // اللعبة تعتمد إجابة المطور الغريبة (45)، بينما 60 هي النتيجة الرياضية الصحيحة.
+ answerRecord(12,c,c===0);
+ if(c===0){
+   state.score++;save();b.classList.add('correct');sound('good');
+   feedback('أحسنت! 45 هي الإجابة التي يعتمدها المطور رسميًا. لا تسأله عن طريقة الحساب؛ فقد كان ينام في حصة الرياضيات، ويبدو أنه ما زال مستيقظًا بالخطأ.','good',[{text:'متابعة',fn:()=>go(13)}]);
+ }else if(c===2){
+   sound('prank');
+   feedback('خطأ! نعم، 15 × 4 تساوي 60 فعلًا، وإجابتك صحيحة رياضيًا ومنطقية تمامًا... لكنك نسيت أن المطور كان ينام في حصة الرياضيات، ولذلك قرر اعتماد 45! لا تناقش العبقرية النائمة، حاول مرة أخرى.','bad');
+ }else if(c===1){
+   feedback('50؟ يبدو أنك أجريت العملية الحسابية باستخدام أصابع شخص آخر، وحتى هو لم يوافقك. حاول مجددًا.','bad');
+ }else{
+   feedback('65؟ أضفت خمسة من عندك كإكرامية لجدول الضرب؟ للأسف، المطور لا يقبل الإكراميات. حاول مرة أخرى.','bad');
+ }
+}
+function q13(c,b){
+ attempts(13);answerRecord(13,c,true);state.score++;save();b.classList.add('correct');sound('good');
+ const lines=['أربعة زوايا، إجابة مباشرة.','2 + 2؟ الرياضيات تحب التنكر أحيانًا.','1 + 3؟ نفس النتيجة، لكن بزيّ مختلف.','1 + 1 + 2؟ يبدو أنك فككت المربع إلى قطع.'];
+ feedback('إجابة صحيحة! '+lines[c]+' جميع الخيارات تمثل العدد أربعة. لماذا خفت؟ هل ظننت أن للمربع زاوية سرية؟','good',[{text:'متابعة',fn:()=>go(14)}]);
+}
+function q14(c,b){
+ attempts(14);answerRecord(14,c,c===2);
+ if(c===2){
+   if(timerId){clearInterval(timerId);timerId=null;}
+   state.score++;save();b.classList.add('correct');sound('good');
+   feedback('صحيح! مجموع الجذرين يساوي 5 وفقًا لعلاقة فييتا. نجحت في الإجابة قبل أن ينهار عدّاد التوتر.','good',[{text:'متابعة',fn:()=>go(15)}]);
+ }else{
+   sound('prank');
+   const jokes=[
+     '2؟ هذا مجموع الجذرين أم عدد مرات محاولتك لفهم المعادلة؟ بقي الوقت يركض، أسرع!',
+     '3؟ هذا أحد الجذرين، وليس مجموعهما. يبدو أنك استعجلت حتى سبقتك المعادلة إلى الحل!',
+     '6؟ هذا حاصل ضرب الجذرين، لا مجموعهما. حتى فييتا يطلب منك أن تهدأ وتقرأ السؤال!'
+   ];
+   feedback('إجابة خاطئة! '+jokes[c]+' لا يزال المؤقت يعمل؛ حاول مجددًا قبل نفاد الثواني.','bad');
+ }
+}
+function q15(c,b){
+ attempts(15);answerRecord(15,c,c===2);
+ if(c===2){state.score++;save();b.classList.add('correct');sound('good');feedback('إجابة صحيحة. الحُصين له دور محوري في تكوين الذكريات الجديدة. احتفظ بهذه المعلومة؛ قد تحتاج إلى تذكّرها لاحقًا.','good',[{text:'متابعة',fn:()=>go(16)}]);}
+ else feedback('ليس هذا الجزء المسؤول بشكل أساسي عن تكوين الذكريات الجديدة. حاول مجددًا، ولا تجعل ذاكرتك تنسى السؤال نفسه.','bad');
+}
+function quantumHint(){
+ state.hints++;state.quantum.hintUsed=true;save();sound('prank');
+ modal('تلميح مفيد... على مضض','بما أن إجابتك كانت صحيحة من البداية، فالتلميح يقول إن الخيار الثاني هو الصحيح: الحوسبة الكمومية.<br><br>المطور لا يريد مساعدتك؛ هو فقط يريد استفزازك قليلًا.',[{text:'حسنًا، سأعيد المحاولة',fn:()=>{overlay.innerHTML='';}}]);
+}
+function q16(c,b){
+ attempts(16);
+ if(!state.quantum.secondTry){
+   answerRecord(16,c,false);state.quantum.secondTry=true;save();
+   feedback('إجابة خاطئة! على الأقل هذا ما قرره المطور. اختر مرة أخرى، وإذا احتجت إلى مساعدة فاستخدم التلميح... رغم أنه قد يزيد الوضع سوءًا.','bad');
+   return;
+ }
+ if(c===1){
+   if(!state.quantum.quiz){
+     answerRecord(16,c,false);state.quantum.quiz=true;save();sound('prank');
+     feedback('عرفت الإجابة أخيرًا! لكن قبل أن نسمح لك بالمرور، سؤال صغير: ما إجابة السؤال الأول في هذه اللعبة؟ اختر الرقم الصحيح أدناه.','good');
+     const q=document.querySelector('.question');if(q)q.textContent='ما إجابة السؤال الأول؟';
+     const labels=['99999','999999','9999999','999999999'];
+     document.getElementById('options').innerHTML=labels.map((v,i)=>`<button class="option" data-choice="${i}"><span class="letter">${letters[i]}</span><span>${v}</span></button>`).join('');
+     bindOptions(q16Final);return;
+   }
+ }else{
+   answerRecord(16,c,false);feedback('لا، ليست هذه. يبدو أن الحوسبة الكمومية أسهل من قراءة أربعة خيارات. جرّب التلميح إن لم تكن قد استخدمته.','bad');return;
+ }
+}
+function q16Final(c,b){
+ attempts('16-final');
+ if(c===2){
+   answerRecord(16,c,true);state.score++;save();b.classList.add('correct');sound('good');confetti();
+   feedback('صحيح! الخيار الثالث: 9999999. لقد تذكرت إجابة السؤال الأول، وهذا إنجاز يفوق توقعات المطور بكثير.','good',[{text:'إلى محطة الصيانة',fn:()=>go(17)}]);
+ }else{
+   answerRecord(16,c,false);save();sound('bad');
+   modal('إجابة خاطئة!','سيعيدك المطور إلى المرحلة الأولى حتى تعرف الإجابة وتحفظها جيدًا. يبدو أن ذاكرتك تحتاج إلى تحديث نظام التشغيل.',[{text:'العودة إلى البداية',cls:'danger',fn:()=>{overlay.innerHTML='';state.retries++;state.stage=1;state.screen='game';state.score=0;state.answers=[];state.attempts={};state.quantum={hintUsed:false,secondTry:false,quiz:false};state.sixth={phase:0,escapes:0,confirmed:false};state.ninthWrong=0;save();render();}}]);
+ }
+}
+function maintenance(){if(timerId){clearInterval(timerId);timerId=null}maintenanceTick++;shell(`<div class="panel maintenance"><div class="eyebrow">بعد السؤال 16 · منطقة غير مكتملة</div><div class="gear">⚙</div><h1 class="hero-title" style="font-size:clamp(29px,5vw,46px)">محطة الصيانة</h1><div class="loader"><span></span></div><div class="status" id="status">جاري فحص وحدات المنطق...</div><p class="lead">نعتذر عن الإزعاج!<br>ما زلنا نعمل على هذه المرحلة.<br>يبدو أن المطور لم يكن مستعدًا لوصولك إلى هنا.<br>يرجى الانتظار... إذا كنت تملك ما يكفي من الصبر.</p><p class="small">لا توجد نتيجة نهائية هنا. النظام في وضع الصيانة.</p></div>`);const lines=['جاري فحص وحدات المنطق...','محاولة العثور على المطور... فشلت.','إعادة تشغيل حسّ الفكاهة...','تحميل الصبر: غير متوفر','المرحلة لا تزال قيد الإنكار.'];let i=0;const el=document.getElementById('status');const id=setInterval(()=>{if(state.screen!=='maintenance'){clearInterval(id);return}if(el)el.textContent=lines[++i%lines.length]},2100)}
+function render(){overlay.innerHTML='';if(timerId&&state.screen!=='game') {clearInterval(timerId);timerId=null}switch(state.screen){case'intro':intro();break;case'gate':gate();break;case'opinion':gate();break;case'maintenance':maintenance();break;default:if(state.stage===0){state.stage=1;save()}if(state.stage===5)timer();else if(state.stage===17)maintenance();else game()}}
 function confetti(){const c=document.createElement('div');c.className='confetti';for(let i=0;i<70;i++){const x=document.createElement('i');x.style.left=Math.random()*100+'%';x.style.background=['#a17aff','#59d8f5','#ff5ca8','#62efbd','#fff'][i%5];x.style.animationDelay=Math.random()*.7+'s';x.style.transform=`rotate(${Math.random()*180}deg)`;c.appendChild(x)}fx.appendChild(c);setTimeout(()=>c.remove(),3200)}
 document.getElementById('soundBtn').onclick=()=>{soundOn=!soundOn;document.getElementById('soundBtn').textContent=soundOn?'♫':'♪';if(soundOn)sound()};document.getElementById('resetBtn').onclick=()=>{modal('إعادة اللعب؟','سيتم حذف تقدمك الحالي والبدء من البداية.',[{text:'إعادة اللعب',cls:'danger',fn:()=>{overlay.innerHTML='';if(timerId)clearInterval(timerId);state=fresh();save();render()}},{text:'إلغاء',cls:'secondary',fn:()=>overlay.innerHTML=''}])};
-// Subtle particle field, entirely local and decorative.
 const canvas=document.getElementById('particles'),ctx=canvas.getContext('2d');let dots=[];function resize(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);dots=Array.from({length:Math.min(65,Math.floor(innerWidth/18))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.6+.3,v:Math.random()*.22+.04}))}function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);for(const d of dots){d.y-=d.v;if(d.y<0){d.y=innerHeight;d.x=Math.random()*innerWidth}ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,Math.PI*2);ctx.fillStyle='rgba(185,164,255,.55)';ctx.fill()}requestAnimationFrame(draw)}addEventListener('resize',resize);resize();draw();
-// Resume state; the intro remains the initial experience unless a saved run exists.
 if(state.screen==='intro'&&state.started&&state.stage>0)state.screen='game';save();render();
-// Wire the two-stage confirmation for the moving tungsten button after render.
-const oldRender=render;render=function(){oldRender();if(state.screen==='game'&&state.stage===6&&state.sixth.phase===4){const b=document.getElementById('opt0');if(b){b.onclick=()=>{sound('prank');sixthConfirm()};const f=document.getElementById('feedback');if(f)f.innerHTML=msg('حسنًا، هذه المرة لن يهرب... ربما.','bad')}}};
+const oldRender=render;render=function(){oldRender();if(state.screen==='game'&&state.stage===6&&state.sixth.phase>=4){const b=document.getElementById('opt0');if(b){b.onclick=()=>{sound('prank');sixthConfirm()};const f=document.getElementById('feedback');if(f)f.innerHTML=msg('حسنًا، هذه المرة لن يهرب... ربما.','bad')}}};
 })();
 </script></body></html>
